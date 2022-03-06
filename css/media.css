@@ -1,0 +1,51 @@
+@media(max-width:1024px) {
+    header .container {
+        flex-direction: column;
+        padding-top: 15px;
+    }
+
+    nav {
+        margin-top: 36px;
+        width: 100%;
+    }
+
+    nav li {
+        flex-grow: 1;
+    }
+}
+
+@media(max-width:800px) {
+    .burger-menu {
+        display: block;
+        background: var(--grey);
+        width: 100%;
+        padding: 20px 0;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        color: var(--white);
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+    } 
+
+    nav a {
+        padding: 20px 0;
+        background: var(--grey);
+        color: var(--white);
+        border-top: 2px solid var(--white);
+        border-radius: 5px;
+    }
+
+    nav a:hover {
+        background: #747373
+    }
+
+}
+
