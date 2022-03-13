@@ -7,4 +7,19 @@ $(function (){
         }
         
     });
+
+
+    $('.about').slick({
+        arrows: false,
+        dots: true,
+        responsive: [{
+            breakpoint: 801,
+            settings: {
+                dots: false,
+                centerMode: true,
+                centerPadding: '40px',
+            }
+        }]
+    });
+
 });
