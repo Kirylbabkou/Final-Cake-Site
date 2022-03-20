@@ -15,8 +15,6 @@ body {
     background: var(--white);
     font-family: 'Montserrat', sans-serif;
     /* font-family: 'Oswald', sans-serif; */
-    
-    
 }
 
 p {
@@ -105,7 +103,11 @@ header .container {
 }
 
 .slide-3 {
-    background: url(../img/bg_about.jpg) center/cover fixed; 
+    background: url(../img/about.jpg) top/cover fixed; 
+}
+
+.slide-3 h1 {
+    color: #383838;
 }
 
 .slick-dots {
@@ -212,21 +214,21 @@ header .container {
 }
 
 .process_img.img-1 {
-    background: url(../img/stage-1.png) center no-repeat;
+    background: url(../img/cake_11.png) center no-repeat;
 }
 
 .process_img.img-2 {
-    background: url(../img/stage-2.png) center no-repeat;
+    background: url(../img/cake_2.png) center no-repeat;
 }
 
 .process_img.img-3 {
-    background: url(../img/stage-3.png) center no-repeat;
+    background: url(../img/cake_44.png) center no-repeat;
 }
 
 .process_discription,
 .contact_discription {
     padding: 30px 0;
-    width: 90%;
+    width: 100%;
     line-height: 22px;
 }
 
@@ -284,6 +286,11 @@ header .container {
     display: block;
     object-fit: contain;
     object-position: top;
+    transition: all 1s;
+}
+
+.galery__item img:hover {
+    transform: scale(1.1);
 }
 
 .galery__item p {
@@ -329,6 +336,15 @@ header .container {
     display: flex;
     justify-content: center;
     padding: 10px 0;
+}
+
+.team__item_social a {
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.team__item_social a:hover {
+    transform: scale(1.1);
 }
 
 .team__item_social li {
@@ -435,6 +451,19 @@ header .container {
     padding-top: 80px;
 }
 
+.contact_discription a {
+    display: inline-block;
+    margin-top: 20px;
+    transition: all 0.3s;
+    text-decoration: none;
+    font-family: 'Vollkorn', serif;
+    color: #333333;
+}
+
+.contact_discription a:hover {
+    transform: scale(1.1);
+}
+
 .contact_img.geo {
     background: url(../img/contact_geo.png) center no-repeat;
     
@@ -455,15 +484,20 @@ header .container {
 }
 
 .contact_list_social a {
+    display: inline;
     margin-right: 20px;
+    margin-top: 0;
+    transition: all 0.3s;
 }
 
-
-
+.contact_list_social a:hover {
+    transform: scale(1.2);
+}
 
 footer {
     background: #000;
-    padding-top: 10px
+    padding-top: 10px;
+    
 }
 
 .form .feelds {
@@ -471,6 +505,7 @@ footer {
     margin-top: 60px;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .form .feelds > fieldset {
@@ -495,20 +530,26 @@ footer {
     font-weight: 400;
     font-size: 17px;
     line-height: 22px;
-    
+    transition: all 0.5s;
 }
 
 .send_info ::-webkit-input-placeholder,
 .send_message ::-webkit-input-placeholder {
-    color: #fff;
+    color: rgb(255, 255, 255, 0.8);
 }
 
-.send_info input:not(:last-child) {
-    /* margin-bottom: 20px; */
-}
+.send_info input:hover {
+    transform: scale(1.03);
+    border-radius: 3px;
+ }
 
 .send_info input:nth-child(2) {
     background: rgb(78, 77, 77);
+}
+
+.send_message {
+    transition: all 0.5s;
+    
 }
 
 .send_message textarea {
@@ -523,22 +564,31 @@ footer {
     line-height: 22px;
     padding-left: 10px;
     color: white;
-    
+    resize: none;
     padding: 10px;
-    
+}
+
+.send_message:hover {
+   transform: scale(1.03);
+   border-radius: 3px;
 }
 
 .btn_order {
-    /* padding: 10px 20px; */
     background-color: #000;
     border: #7EC4BD solid 1px;
     border-radius: 3px;
-    margin-top: 22px;
     text-align: center;
-    
+    transition: all 1s;
+    margin: 22px auto;
+    cursor: pointer;
 }
 
-.btn_order a {
+.btn_order:hover {
+    transform: scale(1.2);
+    border: #7EC4BD solid 2px;
+}
+
+.btn_order {
     display: block;
     padding: 10px 60px;
     text-decoration: none;
