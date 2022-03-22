@@ -13,7 +13,7 @@
         flex-grow: 1;
     }
 
-    .about {
+    .slides {
         min-height: auto;
     }
 
@@ -86,15 +86,15 @@
         background: #747373
     }
 
-    .slider {
+    /* .slider {
         filter: blur(5px);
     }
 
     .slick-center {
         filter: blur(0);
-    }
+    } */
 
-    .about h1 {
+    .slides h1 {
         font-size: 36px;
     }
 
