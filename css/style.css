@@ -204,9 +204,27 @@ header .container {
 .btn_get {
     font-family: 'Vollkorn', serif;
     margin: 60px 0;
-    padding: 20px;
+    /* padding: 20px; */
     background: #FEFEC9;
     border-radius: 5px;
+    border: #000 solid 2px;
+}
+
+.btn_get a {
+    display: block;
+    text-decoration: none;
+    color: var(--grey);
+    padding: 20px;
+    transition: all 0.5s;
+    font-size: 16px;
+}
+
+.btn_get :hover {
+    border: #000 solid 2px;
+    border-radius: 5px;
+    transform: scale(1.03);
+    color: #ABABAB;
+    font-size: 18px;
 }
 
 .process,
@@ -325,40 +343,88 @@ header .container {
     width: 300px;
 }
 
-/* .gallery__preview {
-    width: calc(100% - 40px);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-clip: content-box;
+.popup {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.5s ease 0s;
+}
 
-    min-height: 400px;
+.popup.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup.open .popup__content {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.popup__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+    transition: all 0.5s ease 0s;
+}
+
+.popup__content {
     background-color: #fff;
-    padding: 20px;
-
+    color: #000;
+    max-width: 80%;
+    padding: 30px;
     position: relative;
+    transition: all 0.5s ease 0s;
+    opacity: 0;
+    transform: translate(0px, -100%);
 }
 
-.gallery__preview.hide {
-    display: none;
-}
-
-.gallery__preview_close {
+.popup__close {
     position: absolute;
-
-    top: 20px;
-    right: 20px;
-
+    top: 10px;
+    right: 10px;
     border: 0;
     background-color: rgba(255, 255, 255, .5);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 24px;
     font-weight: bold;
+    padding: 2px 10px;
+    cursor: pointer;
+    
+}
+
+.popup__close a {
+    text-decoration: none;
     color: #000;
     opacity: .8;
-    padding: 2px 10px;
+}
 
-    cursor: pointer;
-} */
+.popup__image img{
+    max-width: 100%;
+}
+.popup .item_discrip {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.popup__title {
+    font-size: 40px;
+    margin: 10px;
+}
+
+.popup__text {
+    align-items: center;
+    text-align: center;
+}
 
 .team {
     margin: 80px 0;
