@@ -7,7 +7,7 @@
 html {
     --white: #fff;
     --grey: #474747;
-    --wrapWidth: 1440px;
+    --wrapWidth: 2560px;
     --contWidth: 950px; 
 }
 
@@ -115,6 +115,7 @@ header .container {
 
 .slider {
     position: relative;
+    overflow: hidden;
 }
 
 .arrow {
@@ -146,6 +147,7 @@ header .container {
 .slides {
     display: flex;
     transition: all ease 1s;
+    
 }
 
 .slide-1 {
