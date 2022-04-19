@@ -14,7 +14,6 @@ html {
 body {
     background: var(--white);
     font-family: 'Montserrat', sans-serif;
-    /* font-family: 'Oswald', sans-serif; */
 }
 
 p {
@@ -40,38 +39,35 @@ span {
     padding: 0 0px;
 }
 
-/* .logo {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #404040;
-    display: inline-block;
-    vertical-align: 20px;
-    font-size: 22px;
-    
-} */
 
-nav ul {
+header {
+    background: rgb(185, 184, 184);
+    opacity: 0.8;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+.sitenav ul {
     list-style: none;
     display: flex;
 }
 
-nav a {
+.sitenav a {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     text-decoration: none;
     text-transform: uppercase;
     color: #404040;
     display: block;
-    padding: 36px 23px;
+    padding: 26px 23px;
     transition: 0.3s;
     
     margin: 0 auto;
     
 }
 
-nav a:hover {
+.sitenav a:hover {
     color: var(--white);
     background: var(--grey);
 }
@@ -85,33 +81,6 @@ header .container {
 .burger-menu {
     display: none;
 }
-
-/* .slider {
-    margin-top: 100px;
-    position: relative;
-}
-
-.visible{
-    width: 100%;
-    overflow: hidden;
-}
-
-.slides {
-    display: inline-flex;
-    list-style: none;
-    transition: transform 1s;
-    
-}
-
-.slide:not(:last-child) {
-    margin-right: 10px;
-}
-
-.slide > div {
-    width: 400px;
-    height: 400px;
-    display: block;
-} */
 
 .slider {
     position: relative;
@@ -147,7 +116,7 @@ header .container {
 .slides {
     display: flex;
     transition: all ease 1s;
-    
+    margin-top: 74px;
 }
 
 .slide-1 {
@@ -231,14 +200,14 @@ header .container {
 
 .process,
 .contact {
-    margin-top: 80px;
+    padding-top: 80px;
     color: #333333;
 }
 
 .section_title {
     font-size: 24px;
     line-height: 36px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
 }
 
 .process_list,
@@ -374,7 +343,7 @@ header .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px 10px;
+    padding: 74px 10px;
     transition: all 0.5s ease 0s;
 }
 
@@ -429,7 +398,7 @@ header .container {
 }
 
 .team {
-    margin: 80px 0;
+    padding: 80px 0;
 }
 
 .team__list {
@@ -577,7 +546,7 @@ header .container {
 .contact {
     background: url(/img/contact_bg.png) no-repeat center/cover;
     margin-top: 0;
-    padding-top: 80px;
+    padding: 80px 0;
 }
 
 .contact_discription a {
@@ -625,7 +594,7 @@ header .container {
 
 footer {
     background: #000;
-    padding-top: 10px;
+    padding-top: 50px;
 }
 
 .form .feelds {
@@ -633,6 +602,7 @@ footer {
     margin-top: 60px;
     flex-direction: column;
     align-items: center;
+    z-index: 1001px;
 }
 
 .form .feelds > fieldset {
@@ -727,8 +697,8 @@ footer {
 }
 
 .footer_logo {
-    margin-top: 37px;
-    margin-bottom: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 footer p {
@@ -737,6 +707,6 @@ footer p {
     font-size: 15px;
     line-height: 22px;
     color: rgb(122, 121, 121);
-    padding-bottom: 75px;
+    padding-bottom: 74px;
 }
 

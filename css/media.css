@@ -4,17 +4,31 @@
         padding-top: 15px;
     }
 
-    nav {
-        margin-top: 36px;
+    header {
+        background: rgb(185, 184, 184);
+        opacity: 1;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: auto;
+    }
+
+    .logo img{
+        height: 40px;
+    }
+
+    .sitenav {
+        margin-top: 16px;
         width: 100%;
     }
 
-    nav li {
+    .sitenav li {
         flex-grow: 1;
     }
 
     .slides {
         min-height: auto;
+        margin-top: 0;
     }
 
     .galery__list {
@@ -50,6 +64,10 @@
 
 @media(max-width:800px) {
 
+    .process, .galery, .team, .reviews, .contact{
+        padding-top: 40px;  
+    }
+
     header .container {
         padding-left: 0;
         padding-right: 0;
@@ -69,12 +87,12 @@
         font-size: 16px;
     }
 
-    nav ul {
+    .sitenav ul {
         flex-direction: column;
         display: none;
     } 
 
-    nav a {
+    .sitenav a {
         padding: 20px 0;
         background: var(--grey);
         color: var(--white);
@@ -82,17 +100,9 @@
         
     }
 
-    nav a:hover {
+    .sitenav a:hover {
         background: #747373
     }
-
-    /* .slider {
-        filter: blur(5px);
-    }
-
-    .slick-center {
-        filter: blur(0);
-    } */
 
     .slides h1 {
         font-size: 36px;
